@@ -1,0 +1,109 @@
+.like-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7px 20px;
+  cursor: pointer;
+  p {
+    font-size: 13px;
+    font-family: system-ui;
+    color: rgba(58, 58, 58, 0.835);
+    margin-bottom: 0;
+  }
+  .like-comment {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .blue {
+      color: #0a66c2;
+    }
+    .black {
+      color: rgba(58, 58, 58, 0.835);
+    }
+    .likes-icon {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: -5px;
+      p {
+        font-size: 13px;
+        font-family: system-ui;
+
+        font-weight: 600;
+        margin-top: 4px;
+      }
+    }
+    .comment-box {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      p {
+        font-size: 13px;
+        font-family: system-ui;
+
+        font-weight: 600;
+        margin-top: 4px;
+      }
+    }
+  }
+  .comment-input {
+    height: 35px;
+    border: 1px solid rgba(58, 58, 58, 0.835);
+    outline: none;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: system-ui;
+    color: rgba(58, 58, 58, 0.835);
+    background-color: whitesmoke;
+    font-weight: 600;
+    &::placeholder {
+      font-size: 13px;
+      font-family: system-ui;
+      color: rgba(58, 58, 58, 0.835);
+      font-weight: 600;
+    }
+  }
+  .post-btn {
+    margin-top: 10px;
+    max-width: 80px;
+    background-color: #0a66c2;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 5px 0;
+    color: white;
+    font-size: 13px;
+    font-family: system-ui;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .all-comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eee8e8;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    margin-top: 10px;
+    position: relative;
+    .username {
+      font-size: 14px;
+      font-family: system-ui;
+      font-weight: 600;
+      color: rgba(58, 58, 58, 0.835);
+    }
+    .comment {
+      font-size: 14px;
+      margin-top: 0;
+      font-family: system-ui;
+      color: rgba(58, 58, 58, 0.835);
+    }
+    .time {
+      font-size: 12px;
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+  }
+}

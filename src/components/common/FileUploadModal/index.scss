@@ -1,0 +1,17 @@
+.img-upload-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  .img-upload-btn {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: system-ui;
+    cursor: pointer;
+  }
+  .progress-bar {
+    padding: 20px;
+  }
+}

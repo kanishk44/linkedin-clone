@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+
+$linkedin-blue1: #0072b1;
+$linkedin-blue2: #0073b1;
+$linkedin-blue3: #003eb1;
+
+.login-btn {
+  width: 300px;
+  height: 40px;
+  cursor: pointer;
+  background-color: $linkedin-blue2;
+  border-radius: 30px;
+  border: none;
+  font-family: system-ui;
+  font-weight: 600;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: $linkedin-blue3;
+}
+
+.login-wrapper {
+  height: 100vh;
+  background-color: white;
+  .login-wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading {
+    font-family: system-ui;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+.sub-heading {
+  margin-top: 20px;
+  font-family: system-ui;
+}
+
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.linkedin-logo {
+  width: 80px;
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+  &:before {
+    content: "";
+    // use the linear-gradient for the fading effect
+    // use a solid background color for a solid bar
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 0.5em;
+    line-height: 1.5em;
+    // this is really the only tricky part, you need to specify the background color of the container element...
+    color: #41403c;
+    background-color: #fcfcfa;
+  }
+}
+
+.google-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .google-btn {
+    width: 300px !important;
+  }
+  .go-to-signup {
+    margin-left: 50px;
+  }
+  .join-now {
+    color: $linkedin-blue1;
+    font-family: system-ui;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}

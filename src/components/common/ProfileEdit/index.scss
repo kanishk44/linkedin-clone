@@ -1,0 +1,85 @@
+$linkedin-blue1: #0072b1;
+$linkedin-blue2: #0073b1;
+$linkedin-blue3: #003eb1;
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 5px;
+  top: 20px;
+  right: 20px;
+  &:hover {
+    background-color: rgb(212, 210, 210);
+    border-radius: 50%;
+  }
+}
+
+.profile-edit-inputs {
+  display: grid;
+  margin-top: 40px;
+  gap: 20px;
+  label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: system-ui;
+  }
+  .edit-input {
+    height: 20px;
+    padding: 10px;
+    background-color: white;
+    color: #212121;
+    outline: none;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-size: 16px;
+    margin: -5px 0;
+  }
+  .edit-input:focus {
+    outline: 1px solid $linkedin-blue1;
+  }
+  ::placeholder {
+    color: #212121;
+    font-family: system-ui;
+    font-size: 16px;
+  }
+  textarea {
+    height: 100px;
+    padding: 10px;
+    background-color: white;
+    color: #212121;
+    outline: none;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-size: 16px;
+    margin: -5px 0;
+    &:focus {
+      outline: 1px solid $linkedin-blue1;
+    }
+    &::placeholder {
+      color: #212121;
+      font-family: system-ui;
+      font-size: 16px;
+    }
+  }
+}
+
+.save-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  .save-btn {
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    background-color: $linkedin-blue2;
+    border-radius: 30px;
+    border: none;
+    font-family: system-ui;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+  }
+}
